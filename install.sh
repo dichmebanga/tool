@@ -5,7 +5,6 @@ random() {
 }
 
 array=(1 2 3 4 5 6 7 8 9 0 a b c d e f)
-
 gen64() {
 	ip64() {
 		echo "${array[$RANDOM % 16]}${array[$RANDOM % 16]}${array[$RANDOM % 16]}${array[$RANDOM % 16]}"
@@ -21,11 +20,11 @@ install_3proxy() {
     mkdir -p /usr/local/etc/3proxy/bin
     mkdir -p /usr/local/etc/3proxy/logs
     mkdir -p /usr/local/etc/3proxy/stat
-    cp src/3proxy /usr/local/etc/3proxy/bin/
-    cp ./scripts/rc.d/proxy.sh /etc/init.d/3proxy
-    chmod +x /etc/init.d/3proxy
-    chkconfig 3proxy on
-    cd $WORKDIR
+    # cp src/3proxy /usr/local/etc/3proxy/bin/
+    # cp ./scripts/rc.d/proxy.sh /etc/init.d/3proxy
+    # chmod +x /etc/init.d/3proxy
+    # chkconfig 3proxy on
+    # cd $WORKDIR
 }
 
 # gen_3proxy() {
