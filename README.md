@@ -1,4 +1,4 @@
-bash <(curl -s "run https://raw.githubusercontent.com/vtopx123/multiipv6/master/install.sh")
+bash <(curl -s "https://raw.githubusercontent.com/dichmebanga/tool/dev/install.sh")
 
 After installation dowload the file proxy.zip
 
