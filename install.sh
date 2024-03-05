@@ -20,11 +20,11 @@ install_3proxy() {
     sudo mkdir -p /usr/local/etc/3proxy/bin
     sudo mkdir -p /usr/local/etc/3proxy/logs
     sudo mkdir -p /usr/local/etc/3proxy/stat
-    sudo cp src/3proxy.c /usr/local/etc/3proxy/bin/
+    sudo cp src/3proxy* /usr/local/etc/3proxy/bin/
     sudo cp ./scripts/rc.d/proxy.sh /usr/local/etc/init.d/3proxy
     sudo chmod +x /usr/local/etc/init.d/3proxy
     sudo systemctl enable 3proxy
-    sudo cd $WORKDIR
+    cd $WORKDIR
 }
 
 install_3proxy
