@@ -17,9 +17,9 @@ install_3proxy() {
     wget -qO- $URL | bsdtar -xvf-
     cd 3proxy-0.9.4
     make -f Makefile.Linux
-    mkdir -p /etc/3proxy/bin
-    mkdir -p /etc/3proxy/logs
-    mkdir -p /etc/3proxy/stat
+    sudo mkdir -p /etc/3proxy/bin
+    sudo mkdir -p /etc/3proxy/logs
+    sudo mkdir -p /etc/3proxy/stat
     # cp src/3proxy /etc/3proxy/bin/
     # cp ./scripts/rc.d/proxy.sh /etc/init.d/3proxy
     # chmod +x /etc/init.d/3proxy
